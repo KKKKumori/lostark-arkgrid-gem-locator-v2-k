@@ -1,0 +1,18 @@
+# 기본적으로 전부 무시
+*
+
+# 디렉터리 자체를 먼저 허용 (⭐️ 중요)
+!src/
+!scripts/
+
+# 그 안의 모든 파일 허용
+!src/**
+!scripts/**
+
+# 루트 파일 하나 추가 허용
+!index.html
+
+# 안전망
+node_modules
+dist
+build
