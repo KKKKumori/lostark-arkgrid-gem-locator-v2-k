@@ -4,7 +4,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [svelte()],
-  base: '/lostark-arkgrid-gem-locator-v2/',
+  base: '/',
   worker: {
     format: 'es',
     // plugins: () => [svelte()],
@@ -15,5 +15,5 @@ export default defineConfig({
     // - 최신 브라우저에서 더 효율적
     // - Tree-shaking 가능 (사용하지 않는 코드 제거)
     // - import/export 문법 그대로 사용 가능
-  }, 
+  },
 });
