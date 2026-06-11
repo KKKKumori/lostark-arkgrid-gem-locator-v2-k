@@ -52,7 +52,7 @@ async function loadLocaleTemplates<TTemplateName extends string>(
   coords: Record<TTemplateName, { x: number; y: number; w: number; h: number }>
 ): Promise<Record<TTemplateName, CvMat>> {
   const cv = getCv();
-  const sprite = await fetchSpriteMat(`${fileName}`);
+  const sprite = await fetchSpriteMat(`/${fileName}`);
   const templates = {} as Record<TTemplateName, CvMat>;
 
   for (const [name, rect] of Object.entries(coords) as [TTemplateName, TemplateCoordMap[string]][]) {
@@ -189,4 +189,5 @@ export async function loadGemAsset() {
     atlasOptionLevel,
   };
 }
+
 
